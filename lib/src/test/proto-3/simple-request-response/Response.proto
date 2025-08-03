@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.example.grrrrpc;
+option java_package = "com.example.grrrrpc";
+
+message SimpleServiceResponse {
+  string message  = 1;
+}

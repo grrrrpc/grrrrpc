@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "Request.proto";
+import "Response.proto";
+
+package com.example.grrrrpc;
+
+/**
+ A simple service to test the parsing capabilities of grrrrpc.
+ */
+service SimpleService {
+  rpc Hello (SimpleServiceRequest) returns (SimpleServiceResponse) {}
+  rpc StreamingHello (stream SimpleServiceRequest) returns (stream SimpleServiceResponse) {}
+}
